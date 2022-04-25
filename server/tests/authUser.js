@@ -7,7 +7,7 @@ describe('Authentication User', function() {
     it('Should fetch authenticated user on providing auth token', function(done) {
         request(app)
         .get('/api/auth/')
-        .set('Authorization', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFkYWY3ODJjNjg2YmYzNGE4YWNlNTJlIn0sImlhdCI6MTY1MDg3ODQ3NCwiZXhwIjoxNjUwODgyMDc0fQ.jxdajBgZlRGiIEoG7D1hbmTtmwLFkoCsP4hp4gko3eY")
+        .set('Authorization', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjFkYWY3ODJjNjg2YmYzNGE4YWNlNTJlIn0sImlhdCI6MTY1MDg4NjQ3MiwiZXhwIjoxNjUwODkwMDcyfQ.yP7axzg6slIbuLfY569WAh1UsXYa5GrbJFgHqoqdyns")
         .expect('content-type', /json/)
         .expect(200, done);
     });

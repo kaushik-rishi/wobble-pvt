@@ -21,11 +21,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies & run tests
         run: |
-          pwd
-          ls
-          ls ..
-          ls ../..
-          ls
           cd server
           npm ci
           npm test

@@ -9,7 +9,7 @@
     "client": "BROWSER=none npm start --prefix client",
     "dev": "concurrently --openssl-legacy-provider \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --prefix && npm run build --prefix client",
-    "test": "mocha tests --recursive --exit",
+    "test": "mocha tests --recursive --timeout 10000 --exit",
     "ci": "rm -rf node_modules && npm i"
   },
   "license": "ISC",

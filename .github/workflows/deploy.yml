@@ -25,6 +25,7 @@ jobs:
           ls
           ls ..
           ls ../..
+          ls
           cd server
           npm ci
           npm test
